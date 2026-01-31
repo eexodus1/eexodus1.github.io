@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Animated Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="matrix-loader">
+        <canvas id="matrix-canvas"></canvas>
+</div>
+      
+
+<!-- Profile hover zone -->
+<div class="profile-zone"></div>
+
+<!-- Floating profile -->
+<div class="profile-float" id="profile">
+  <img src="arch pfp.png" alt="Profile" />
+  <span class="profile-name">exodus</span>
+</div>
+
+<!-- Right navigation -->
+<nav class="side-nav">
+  <a href="#home" class="nav-link active">HOME</a>
+  <a href="#about" class="nav-link">ABOUT</a>
+  <a href="#projects" class="nav-link">PROJECTS</a>
+  <a href="#social" class="nav-link">SOCIAL</a>
+  <a href="#contact" class="nav-link">CONTACT</a>
+</nav>
+
+<section id="home" class="section">
+  <div class="hero reveal">
+    <h1 class="hero-title">Hello there.</h1>
+    <p class="hero-sub">A person that goes by the name Exodus, welcome to my portfolio..</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-glow"></div>
+</section>
+
+<section id="about" class="section">
+  <h2 class="section-title reveal">About Me</h2>
+  <p class="about-text reveal">
+    Pentesting, programming, gaming... and all of those kind of stupid stuff.
+  </p>
+</section>
+
+<section id="projects" class="section alt">
+  <h2 class="section-title reveal">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card reveal"><h3>Soon.</h3><p>...</p></div>
+    <div class="project-card reveal"><h3>Soon.</h3><p>...</p></div>
+    <div class="project-card reveal"><h3>Soon.</h3><p>...</p></div>
+  </div>
+</section>
+
+<section id="social" class="section">
+  <h2 class="section-title reveal">Social Media</h2>
+  <div class="social-grid reveal">
+    <a class="social-card" data-page="bin/github.html" href="#">GitHub</a>
+    <a class="social-card" data-page="bin/youtube.html" href="#">YouTube</a>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <h2 class="section-title reveal">Contact</h2>
+  <ul class="contact-list reveal">
+    <li>Discord Server – <span>soon.</span></li>
+    <li>Email – <span>unknown.</span></li>
+    <li>GitHub – <span>github.com/eexodus1</span></li>
+  </ul>
+</section>
+
+<footer class="footer">© <span id="year"></span> exodus</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
